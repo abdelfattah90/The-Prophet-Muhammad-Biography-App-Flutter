@@ -1,0 +1,35 @@
+import 'package:get/get.dart';
+
+import 'import_pages.dart';
+
+final getPages = [
+  GetPage(name: '/', page: () => const HomeScreen()),
+  GetPage(name: '/section1', page: () => const Section1()),
+  GetPage(name: '/section2', page: () => const Section2()),
+  GetPage(name: '/section3', page: () => const Section3()),
+  GetPage(name: '/section4', page: () => const Section4()),
+  GetPage(name: '/section5', page: () => const Section5()),
+  GetPage(name: '/section6', page: () => const Section6()),
+  GetPage(name: '/section7', page: () => const Section7()),
+  GetPage(name: '/section8', page: () => const Section8()),
+  GetPage(name: '/section9', page: () => const Section9()),
+  GetPage(name: '/section10', page: () => const Section10()),
+  GetPage(name: '/section11', page: () => const Section11()),
+  GetPage(name: '/section12', page: () => const Section12()),
+  GetPage(name: '/section13', page: () => const Section13()),
+  GetPage(name: '/section14', page: () => const Section14()),
+  GetPage(name: '/section15', page: () => const Section15()),
+  GetPage(name: '/section16', page: () => const Section16()),
+  GetPage(name: '/section17', page: () => const Section17()),
+  GetPage(name: '/section18', page: () => const Section18()),
+  GetPage(name: '/section19', page: () => const Section19()),
+  GetPage(name: '/section20', page: () => const Section20()),
+  GetPage(name: '/section21', page: () => const Section21()),
+  GetPage(name: '/section22', page: () => const Section22()),
+  GetPage(name: '/section23', page: () => const Section23()),
+  GetPage(name: '/section24', page: () => const Section24()),
+  GetPage(name: '/section25', page: () => const Section25()),
+  GetPage(name: '/section26', page: () => const Section26()),
+  GetPage(name: '/section27', page: () => const Section27()),
+  GetPage(name: '/section28', page: () => const Section28()),
+];
