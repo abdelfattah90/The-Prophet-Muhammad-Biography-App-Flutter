@@ -70,74 +70,51 @@ Divider dividerLine() => const Divider(
     );
 
 ExpansionTile exTileWidget1(Widget t1, Widget w1) => ExpansionTile(
-      trailing: const Icon(
-        Icons.subject_outlined,
-        color: exTileIconColor,
-        size: 20.0,
-      ),
+      // const Icon(
+      //       Icons.subject_outlined,
+      //       color: exTileIconColor,
+      //       size: 20.0,
+      //     ),
+      trailing: const SizedBox(),
       title: t1,
       children: [w1],
     );
 ExpansionTile exTileWidget2(Widget t1, Widget w1, Widget w2) => ExpansionTile(
-      trailing: const Icon(
-        Icons.subject_outlined,
-        color: exTileIconColor,
-        size: 20.0,
-      ),
+      trailing: const SizedBox(),
       title: t1,
       children: [w1, w2],
     );
 ExpansionTile exTileWidget3(Widget t1, Widget w1, Widget w2, Widget w3) =>
     ExpansionTile(
-      trailing: const Icon(
-        Icons.subject_outlined,
-        color: exTileIconColor,
-        size: 20.0,
-      ),
+      trailing: const SizedBox(),
       title: t1,
       children: [w1, w2, w3],
     );
 ExpansionTile exTileWidget4(
         Widget t1, Widget w1, Widget w2, Widget w3, Widget w4) =>
     ExpansionTile(
-      trailing: const Icon(
-        Icons.subject_outlined,
-        color: exTileIconColor,
-        size: 20.0,
-      ),
+      trailing: const SizedBox(),
       title: t1,
       children: [w1, w2, w3, w4],
     );
 ExpansionTile exTileWidget5(
         Widget t1, Widget w1, Widget w2, Widget w3, Widget w4, Widget w5) =>
     ExpansionTile(
-      trailing: const Icon(
-        Icons.subject_outlined,
-        color: exTileIconColor,
-        size: 20.0,
-      ),
+      trailing: const SizedBox(),
       title: t1,
       children: [w1, w2, w3, w4, w5],
     );
 ExpansionTile exTileWidget6(Widget t1, Widget w1, Widget w2, Widget w3,
         Widget w4, Widget w5, Widget w6) =>
     ExpansionTile(
-      trailing: const Icon(
-        Icons.subject_outlined,
-        color: exTileIconColor,
-        size: 20.0,
-      ),
+      trailing: const SizedBox(),
       title: t1,
       children: [w1, w2, w3, w4, w5, w6],
     );
 ExpansionTile exTileWidget7(Widget t1, Widget w1, Widget w2, Widget w3,
         Widget w4, Widget w5, Widget w6, Widget w7) =>
     ExpansionTile(
-      trailing: const Icon(
-        Icons.subject_outlined,
-        color: exTileIconColor,
-        size: 20.0,
-      ),
+      trailing: const SizedBox(),
       title: t1,
       children: [w1, w2, w3, w4, w5, w6, w7],
     );

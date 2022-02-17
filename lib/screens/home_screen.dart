@@ -78,7 +78,7 @@ class HomeScreen extends StatelessWidget {
               width: double.infinity,
               decoration: const BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage("assets/images/cover.jpg"),
+                  image: AssetImage("assets/images/cover.png"),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -132,6 +132,7 @@ class HomeScreen extends StatelessWidget {
                       );
                     },
                   ),
+                  const SizedBox(height: 50),
                 ],
               ),
             ),

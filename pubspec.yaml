@@ -58,7 +58,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/images/cover.jpg
+    - assets/images/cover.png
 
   fonts:
     - family: droid
