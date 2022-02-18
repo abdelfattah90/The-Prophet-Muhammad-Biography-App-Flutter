@@ -47,7 +47,7 @@ final List<String> sections = <String>[
   'فاجعة بئر معونة',
   'غزوة بني النضير',
   'غزوة ذات الرقاع',
-  'المصطلق والمنافقون',
+  'بنى المصطلق',
   'حادثة الإفك',
   'غزوة الأحزاب',
   'ما كان مُحمَّد أبَا أحَدٍ',
@@ -60,6 +60,36 @@ final List<String> sections = <String>[
   'الصدق سفينة النجاة',
   'حجة الوداع',
   'إلى الرفيق الأعلى',
+];
+final List<String> sectionsNums = <String>[
+  '1',
+  '2',
+  '3',
+  '4',
+  '5',
+  '6',
+  '7',
+  '8',
+  '9',
+  '10',
+  '11',
+  '12',
+  '13',
+  '14',
+  '15',
+  '16',
+  '17',
+  '18',
+  '19',
+  '20',
+  '21',
+  '22',
+  '23',
+  '24',
+  '25',
+  '26',
+  '27',
+  '28',
 ];
 
 class HomeScreen extends StatelessWidget {
@@ -74,7 +104,7 @@ class HomeScreen extends StatelessWidget {
           child: Center(
             child: Container(
               padding: const EdgeInsets.only(
-                  top: 60.0, right: 30.0, left: 30.0, bottom: 20.0),
+                  top: 60.0, right: 15.0, left: 15.0, bottom: 20.0),
               width: double.infinity,
               decoration: const BoxDecoration(
                 image: DecorationImage(
@@ -108,7 +138,7 @@ class HomeScreen extends StatelessWidget {
                       crossAxisSpacing: 10,
                       mainAxisSpacing: 35,
                       crossAxisCount: 2,
-                      childAspectRatio: 4,
+                      childAspectRatio: 3.5,
                     ),
                     itemCount: sections.length,
                     itemBuilder: (context, index) {
@@ -119,14 +149,42 @@ class HomeScreen extends StatelessWidget {
                             color: const Color(0xFFFFFFFF),
                             borderRadius: BorderRadius.circular(4),
                           ),
-                          child: Align(
-                            alignment: Alignment.center,
-                            child: Text(
-                              sections[index],
-                              style: const TextStyle(
-                                  fontFamily: 'swissr',
-                                  color: Color(0xFF000000)),
-                            ),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                bottom: 0,
+                                top: 0,
+                                child: Container(
+                                  decoration: const BoxDecoration(
+                                    color: Color.fromARGB(84, 231, 231, 231),
+                                    borderRadius: BorderRadius.only(
+                                      topRight: Radius.circular(4.0),
+                                      bottomRight: Radius.circular(4.0),
+                                    ),
+                                  ),
+                                  alignment: Alignment.center,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(5.0),
+                                    child: Text(
+                                      sectionsNums[index],
+                                      style: const TextStyle(
+                                          fontSize: 11.0,
+                                          color:
+                                              Color.fromARGB(255, 94, 94, 94)),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Align(
+                                alignment: Alignment.center,
+                                child: Text(
+                                  sections[index],
+                                  style: const TextStyle(
+                                      fontFamily: 'swissr',
+                                      color: Color(0xFF000000)),
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       );
@@ -143,68 +201,7 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-
-
-
-//  Center(
-//                   child: Text(
-//                     'السيــــــرة الـنـبـويـة',
-//                     style: TextStyle(
-//                       fontFamily: 'swissr',
-//                       fontSize: 30,
-//                       color: Color(0xFF000000),
-//                     ),
-//                   ),
-//                 ),
-//                 Center(
-//                   child: Text(
-//                     'قــصــص وعِــبَــر',
-//                     style: TextStyle(
-//                       fontFamily: 'swissr',
-//                       fontSize: 15,
-//                       color: Color(0xFF000000),
-//                     ),
-//                   ),
-//                 ),
-
-
-
-
-
-
-
-
-// Container(
-//           padding: const EdgeInsets.only(top: 30.0, right: 30.0, left: 30.0),
-//           decoration: const BoxDecoration(
-//               image: DecorationImage(
-//             image: AssetImage("assets/images/cover.jpg"),
-//             fit: BoxFit.cover,
-//           )),
-//           child: GridView.builder(
-//             shrinkWrap: true,
-//             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-//               crossAxisSpacing: 15,
-//               mainAxisSpacing: 40,
-//               crossAxisCount: 2,
-//               childAspectRatio: 4,
-//             ),
-//             itemCount: sections.length,
-//             itemBuilder: (context, index) {
-//               return Container(
-//                 decoration: BoxDecoration(
-//                   color: const Color(0xFFFFFFFF),
-//                   borderRadius: BorderRadius.circular(4),
-//                 ),
-//                 child: Align(
-//                   alignment: Alignment.center,
-//                   child: Text(
-//                     sections[index],
-//                     style: const TextStyle(
-//                         fontFamily: 'quest', color: Color(0xFF000000)),
-//                   ),
-//                 ),
-//               );
-//             },
-//           ),
-//         ),
+  // width: 20,
+  // height: 20,
+  // color:
+  // const Color.fromARGB(255, 184, 184, 184),

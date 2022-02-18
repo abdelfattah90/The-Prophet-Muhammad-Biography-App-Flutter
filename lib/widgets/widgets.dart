@@ -21,7 +21,10 @@ AppBar appbarWidget(String title) => AppBar(
       title: Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
-          Text(title),
+          Padding(
+            padding: const EdgeInsets.only(right: 5),
+            child: Text(title),
+          ),
         ],
       ),
     );
@@ -39,9 +42,11 @@ Container paragraphText(String content) => Container(
 Text mainTitle(String content) => Text(
       content,
       style: const TextStyle(
-          fontFamily: 'NotoNaskhArabic',
-          color: mainTitleColor,
-          fontWeight: FontWeight.bold),
+        fontFamily: 'NotoNaskhArabic',
+        color: mainTitleColor,
+        fontWeight: FontWeight.bold,
+        fontSize: 17.0,
+      ),
     );
 
 Text secondTitle(String content) => Text(
@@ -50,6 +55,7 @@ Text secondTitle(String content) => Text(
         fontFamily: 'NotoNaskhArabic',
         color: secondTitleColor,
         fontWeight: FontWeight.bold,
+        fontSize: 17.0,
       ),
     );
 
@@ -59,6 +65,7 @@ Text thirdTitle(String content) => Text(
         fontFamily: 'NotoNaskhArabic',
         color: thirdTitleColor,
         fontWeight: FontWeight.bold,
+        fontSize: 17.0,
       ),
     );
 

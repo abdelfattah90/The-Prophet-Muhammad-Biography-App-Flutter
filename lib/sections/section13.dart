@@ -15,9 +15,9 @@ class Section13 extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              exTileWidget2(
+              paragraphText(p1),
+              exTileWidget1(
                 mainTitle(t1),
-                paragraphText(p1),
                 paragraphText(p2),
               ),
               exTileWidget2(

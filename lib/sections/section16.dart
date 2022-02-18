@@ -8,7 +8,7 @@ class Section16 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: appbarWidget('المصطلق والمنافقون'),
+      appBar: appbarWidget('بنى المصطلق'),
       body: SingleChildScrollView(
         child: Directionality(
           textDirection: TextDirection.rtl,
